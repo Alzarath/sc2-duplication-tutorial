@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Duplicate a Unit</title>
+        <title>Unit Duplication Tutorial</title>
         <meta charset="utf-8" />
         <meta name="generator" content="https://github.com/EdJoPaTo/markdown-to-standalone-html 0.5.0" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,17 @@
         <style>.github-fork-ribbon:before { background-color: #f93; }</style>
     </head>
     <body>
+        <a class="github-fork-ribbon right-top" href="https://github.com/alzarath/sc2-duplication-tutorial" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
         <main>
-            <a class="github-fork-ribbon right-top" href="https://github.com/alzarath/sc2-duplication-tutorial" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+            <h1 id="title">Unit Duplication</h1>
+            <p>Duplicating units allows you to create separate units that have different attributes from the originals. It can even be used as a baseline to create an entirely new unit.</p>
+            <div class="rightShifted">
+                <h2>What should I duplicate?</h2>
+                <p>If your goal is to create a variant of an existing unit, it should be pretty easy to select a unit to duplicate. However, if your intention is to create something unique, I would still recommend duplicating a unit that mechanically resembles the unit you have in mind. There are a lot of different fields that can be glossed over, so you'll want to work with a good baseline. In this tutorial, we'll cover duplicating a Marine.</p>
+            </div>
             <h1 id="title">How to Duplicate a Unit</h1>
-            <p>Let's say you want to make a copy of a Marine. Before you start duplicating, you need to determine what aspects of the unit you want to make modifications to. The more things you choose, the more control you'll have, but the more space used by your map. It's best to avoid duplicating anything that you don't need to.</p>
+            <p>Before you start duplicating, you need to determine what aspects of the unit you want to make modifications to. The more things you choose, the more control you'll have, but the more space used by your map. It's best to avoid duplicating anything that you don't need to.</p>
+            <p><strong>Select the data that you want to duplicate:</strong></p>
             <ul id="options" class="cleanList">
                 <li><input type="checkbox" id="unitDataCB" affectedBoxes="unitDataDupe" checked> <a class="disabledLink" href="#unit-data">Unit Data</a>
                     <ul class="cleanList disabledElement">
@@ -36,6 +43,7 @@
                     </ul>
                 </li>
             </ul>
+            <p>Data that is desirable for duplication will be checked on the object explorers shown on this page depending on what you've selected.</p>
             <p class="footnote">*There is a difference between a model file and model data, as well as a sound file and sound data. In this tutorial I'm only referring to model data and sound data. Most model files and sound files already have model data and sound data that you can reference in actor fields, so I personally <strong>do not</strong> recommend duplicating them unless you need to.</p>
             <div class="sidebar">
                 <ul id="duplicateVisualization" class="duplicateList">
@@ -165,8 +173,8 @@
             <ul>
                 <li><span class="coreData">Grey data</span> is part of the game's Core data dependency. <strong>You usually do not want to duplicate these.</strong></li>
                 <li><span class="standardDependData">Blue data</span> is part of a standard dependency, such as an expansion's data or its campaign data.</li>
-                <li><span class="nonstandardDependData">Orange data</span> is part of a non-standard dependency that was probably created by you or another user.</li>
-                <li><span class="docData">Green data</span> is part of the map or mod that you're editing. This is data you've probably changed or created.
+                <li><span class="nonstandardDependData">Orange data</span> is part of a non-standard dependency that was created by you or another user.</li>
+                <li><span class="docData">Green data</span> is part of the map or mod that you're editing. This is data a user has changed or created.</li>
                 <li><span class="docParentData">Light Green data</span> is part of the map or mod that you're editing. It's a child of other data and hasn't been edited directly.</li>
             </ul>
             <div id="unit-data" class="disabledElement">
@@ -193,11 +201,14 @@
                         </ul>
                     </li>
                 </ul>
-                <p>While units tend to have a lot of moving parts, the units themselves usually are fundamentally pretty simple.</p>
-                <p>To duplicate a unit, there are usually only a small handfull of items that you'll need. The <strong>unit data</strong>, which if you're duplicating from the Unit's entry, should already be selected. For us, it's called <code>Marine</code> and is the top-most entry in the data tree.</p>
+                <p>While units tend to have a lot of moving parts, the units themselves are fundamentally pretty simple.</p>
+                <p>To duplicate a unit, there are only a small handful of items that you'll need. The <strong>unit data</strong>, which if you're duplicating from the Unit's entry, should already be selected. For us, it's called <code>Marine</code> and is the top-most entry in the data tree.</p>
                 <p>Additionally, you'll want the unit's primary <strong>unit actor</strong>, which should share a name similar to the Unit and will often stand out with an icon that resembles the unit. In our case, it's called <code>Marine</code>.</p>
-                <p>These are the only two actors to get a unit to fundamentally act like a unit. There are sometimes a few extra actors that you can choose to duplicate if you want their functionality, however. Many units have an actor that has the name of the unit suffixed by <code>_Death</code> or something similar. This is a sound actor that usually grants the unit a 25% chance to play a death sound when it dies. You may also duplicate this if you want to retain that functionality.</p>
-                <p>Some structures will also have a Splat actor that uses the unit's name followed by <code> Splat</code>, making the structure feel more grounded in the world that can be useful to duplicate, but for now we're only focusing on a unit.</p>
+                <p>These are the only two data entries needed to get a unit to fundamentally act like a unit. There are sometimes a few extra actors that you can choose to duplicate if you want their functionality. Two examples include a Death sound actor and a Splat actor.</p>
+                <div class="rightShifted">
+                    <p>Many units have an actor that has the name of the unit suffixed by <code>_Death</code> or something similar. This is a sound actor that grants the unit a chance to play a death sound when it dies. You may also duplicate this if you want to retain that functionality. For us, <code>Marine_Death</code></p>
+                    <p>Some structures will also have a Splat actor that can be useful to duplicate which creates an image beneath the structure making it feel more grounded in the world. It uses the unit's name followed by <code> Splat</code>. For now we're only focusing on a unit.</p>
+                </div>
                 <div id="unit-models" class="disabledElement">
                     <h3>Unit Models</h3>
                     <ul class="duplicateList">
@@ -225,13 +236,13 @@
                             </ul>
                         </li>
                     </ul>
-                    <p>In most cases you'll probably just want to change the <em>unit actor</em>'s fields to specify different models, but duplicating models is useful if you're importing new model files or using models that don't have associated model data in your dependencies.</p>
-                    <p>While we're showing all of a marine's models here, it's still best practice to duplicate as few items as possible. If you don't have a replacement model for any of the following or one already exists in the model data, you should probably not duplicate it.</p>
+                    <p>In most cases you should change the <em>unit actor</em>'s fields to specify different models, but duplicating models is useful if you're importing new model files or using models that don't have associated model data in your dependencies.</p>
+                    <p>While all of a marine's models are shown here, it's still best practice to duplicate as few items as possible. If you don't have a replacement model for any of the following or one already exists in the model data, you likely do not need to duplicate it.</p>
                     <div class="rightShifted">
                         <h4 id="unit-model">Unit Model</h4>
                         <p>The unit's model is declared in the <em>unit actor</em>'s <code>Art: Model</code> field and usually shares the same name as the unit itself. In this case, <code>Marine</code>.</p>
                         <h4 id="portrait">Portrait</h4>
-                        <p>The unit's portrait is declared in the <em>unit actor</em>'s <code>Art: Model (Portrait)</code> field. Most portraits will either be the unit named prefixed with <code>Portrait -</code> or suffixed with <code> Portrait</code>. In our case, <code>Portrait - Marine</code>.</p>
+                        <p>The unit's portrait is declared in the <em>unit actor</em>'s <code>Art: Model (Portrait)</code> field. Most portraits will either have the unit named prefixed with <code>Portrait -</code> or suffixed with <code> Portrait</code>. In our case, <code>Portrait - Marine</code>.</p>
                         <h4 id="death-models">Death Models</h4>
                         <p>Units have a number of death models that are located within the <em>unit actor</em>'s <code>Death Effects</code>. These are usually identified by the Unit's name suffixed by <code> Death</code> and sometimes further suffixed more specific variants such as <code> Fire</code> and <code> Acid</code>. Here's a list of what we'd be interested in if we want to change all of them for our Marine:</p><ul>
                         <li><code>Marine Death</code></li>
@@ -270,8 +281,8 @@
                             </ul>
                         </li>
                     </ul>
-                    <p>In most cases you'll probably just want to change the <em>unit actor</em>'s fields to specify different sounds, but duplicating sounds is useful if you're importing new sound files or using sounds that don't have associated sound data in your dependencies.</p>
-                    <p>While we're showing all of a marine's sounds here, it's still best practice to duplicate as few items as possible. If you don't have a replacement sound for any of the following or one already exists in the sound data, you should probably not duplicate it.</p>
+                    <p>In most cases you should change the <em>unit actor</em>'s fields to specify different sounds, but duplicating sounds is useful if you're importing new sound files or using sounds that don't have associated sound data in your dependencies.</p>
+                    <p>While all of a marine's sounds are shown here, it's still best practice to duplicate as few items as possible. If you don't have a replacement sound for any of the following or one already exists in the sound data, you likely do not need to duplicate it.</p>
                     <div class="rightShifted">
                         <h4 id="voice-lines">Voice Lines</h4>
                         <p>Voice lines are declared in the <em>unit actor</em>'s <code>Sound: Sounds</code> field. Voice Lines typically have the unit's name suffixed by the particular voice line index it's reprensenting such as <code>_What</code> and <code>_Ready</code>. Here's a list of the Marine's voice lines:</p>
@@ -338,11 +349,11 @@
                         </li>
                     </ul>
                 </ul>
-                <p>Most weapons can also be duplicated from the unit's data, although there are some instances of complex or unusual weapons that use effect trees that the object explorer will not properly track. If you encounter one of these scenarios and a duplicated weapon does not function properly or just want to learn more about effect trees, it would be better to follow the <a href="weapon.html">Weapon</a> tutorial.</p>
+                <p>Most weapons can also be duplicated from the unit's data, although there are some instances of complex or unusual weapons that use effect trees that the object explorer will not properly track.</p> <!-- TODO: Create "effect tree following" tutorial and reference it here -->
                 <p>Weapons are often simple instant or projectile-based effect trees. The first thing you'll want to duplicate is the weapon data itself, which has the name of the weapon, usually as shown in-game and typically is located toward the bottom of the object tree. Sometimes the weapon will also be suffixed by our unit name and a hyphen. In our case, we want to add <code>Marine - C-14 Gauss Rifle</code>.</p>
                 <p>You will probably want to duplicate all of a weapon's effects. The names here can vary but usually follow one of two formulas:</p>
                 <p>The unit named, followed by a hyphen, followed by the weapon name, followed by a descriptor of the effect, sometimes in parentheses. This is what our Marine uses. Seeing how we have a very simple effect chain with Marine, there is only one effect, <code>Marine - C-14 Gauss Rifle (Damage)</code>.</p>
-                <p>Another formula uses the name of the unit, often followed by an effect descriptor. Here's an example of the Hellbat's weapon effect tree for reference:</p>
+                <p>Another formula uses the name of the unit followed by an effect descriptor. Here's an example of the Hellbat's weapon effect tree for reference:</p>
                 <details class="rightShifted">
                     <summary>Hellbat Example</summary>
                     <ul class="duplicateList">
@@ -388,7 +399,7 @@
                         </li>
                     </ul>
                     <p>In most cases you'll probably just want to change the <em>attack actor</em>'s fields to specify different models, but duplicating models is useful if you're importing new model files or using models that don't have associated model data in your dependencies.</p>
-                    <p><em>Attack actor</em>s usually contain the majority of references to model data for a unit's weapon.</p>
+                    <p><em>Attack actor</em>s contain the majority of references to model data for a units' weapons.</p>
                     <p>The impact models are located in the <em>attack actor</em>'s <code>Impact Map</code> field. The impact model usually follows the format of the unit's name, followed by <code> Attack Impact</code>. In our case <code>Marine Attack Impact</code>. There can be other models that can be found in the field as well depending on the target, such as how the Marine uses the generic <code>Blood Target Impact</code> when hitting Flesh units.</p>
                     <p>The launch model is located in the <em>attack actor</em>'s <code>Launch Assets</code> field. The launch model usually follows the format of the unit's name, followed by <code> Attack Launch</code>. In our case, <code>Marine Attack Launch</code>.</p>
                     <p>In some cases, such as with the Marine, there is can be an additional launch model that comes from a container such as the Bunker located in the <em>attack actor</em>'s <code>Container Assets</code>. The Marine uses <code>Marine Bunker Attack Launch</code> for this.</p>
@@ -419,7 +430,7 @@
                         </li>
                     </ul>
                     <p>In most cases you'll probably just want to change the <em>attack actor</em>'s fields to specify different sounds, but duplicating sounds is useful if you're importing new sound files or using sounds that don't have associated sound data in your dependencies.</p>
-                    <p><em>Attack actor</em>s usually contain the majority of references to sound data for a unit's weapon.</p>
+                    <p><em>Attack actor</em>s contain the majority of references to sound data for units' weapons.</p>
                     <p>The impact sounds are located in the <em>attack actor</em>'s <code>Impact Map</code> field. The impact sound usually follows the format of the unit's name, followed by <code>_AttackImpact</code>. In our case <code>Marine_AttackImpact</code>. There can be other sounds that can be found in the field as well depending on the target.</p>
                     <p>The launch sound is located in the <em>attack actor</em>'s <code>Launch Assets</code> field. The launch sound usually follows the format of the unit's name, followed by <code>_AttackLaunch</code>. In our case, <code>Marine_AttackLaunch</code>.</p>
                     <p>In some cases, such as with the Marine, there is can be an additional launch sound that comes from a container such as the Bunker located in the <em>attack actor</em>'s <code>Container Assets</code>. The Marine uses <code>Marine_BunkerAttackLaunch</code> for this.</p>
@@ -482,7 +493,7 @@
                         </li>
                     </ul>
                 </ul>
-                <p>Abilities tend to vary pretty wildly, so it would serve to follow ability effect trees to understand how they work. Unfortunately the number of different naming schemes that abilities tend to follow is too vast to give a thorough enough explanation, but for the most part, if an effect or actor has the ability name in its name, it's probably safe to assume it's associated with it.</p>
+                <p>Abilities tend to vary pretty wildly, so it would serve to follow ability effect trees to understand how they work. Unfortunately the number of different naming schemes that abilities tend to follow is too vast to give a thorough enough explanation, but for the most part, if an effect or actor has the ability name in its name, it's probably safe to assume it's associated with it.</p> <!-- TODO: Create "effect tree following" tutorial and reference it here -->
                 <p>For our case, the Marine's StimPack is a pretty simple ability. There are a few different parts of the Stimpack we would want to duplicate.</p>
                 <p>The ability data itself, <code>Marine - StimPack</code> is the easy one. </p>
                 <p>The effect data is also fairly obvious, using a similar name to our ability, <code>Marine - Stim Pack (Apply Buff)</code>.</p>

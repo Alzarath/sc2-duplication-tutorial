@@ -6,6 +6,10 @@ function checkBox(checkboxID) {
     let elementCB = document.getElementById(checkboxID);
     let elementLink = elementCB.parentNode.getElementsByTagName('a')[0];
     let childList = elementCB.parentNode.getElementsByClassName("cleanList")[0]
+    let children = null
+    if (childList) {
+        children = childList.getElementsByTagName('Input')
+    }
 
     let section = document.querySelector(elementLink.hash);
     let affectedBoxes = document.getElementsByClassName(elementCB.attributes.affectedBoxes.value);
@@ -27,6 +31,12 @@ function checkBox(checkboxID) {
         }
         if (childList) {
             childList.classList.add("disabledElement")
+            for (child of children) {
+                if (child.checked) {
+                    child.checked = false;
+                    checkBox(child.id)
+                }
+            }
         }
     }
 }
