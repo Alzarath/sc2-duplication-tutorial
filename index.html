@@ -273,31 +273,32 @@
                     <p>In most cases you'll probably just want to change the <em>unit actor</em>'s fields to specify different sounds, but duplicating sounds is useful if you're importing new sound files or using sounds that don't have associated sound data in your dependencies.</p>
                     <p>While we're showing all of a marine's sounds here, it's still best practice to duplicate as few items as possible. If you don't have a replacement sound for any of the following or one already exists in the sound data, you should probably not duplicate it.</p>
                     <div class="rightShifted">
-                    <h4 id="voice-lines">Voice Lines</h4>
-                    <p>Voice lines are declared in the <em>unit actor</em>'s <code>Sound: Sounds</code> field. Voice Lines typically have the unit's name suffixed by the particular voice line index it's reprensenting such as <code>_What</code> and <code>_Ready</code>. Here's a list of the Marine's voice lines:</p>
-                    <ul>
-                        <li><code>Marine_Attack</code></li>
-                        <li><code>Marine_Help</code></li>
-                        <li><code>Marine_Pissed</code></li>
-                        <li><code>Marine_Ready</code></li>
-                        <li><code>Marine_What</code></li>
-                        <li><code>Marine_Yes</code></li>
-                    </ul>
-                    <p>Additionally, some <a href="#Ability">abilities</a> have custom voice lines that are played when the unit casts the ability that are defined in the <code>Ability Sounds</code> field. These typically have the unit's name suffixed by <code>_</code>, the ability name, and <code>VO</code>. In our case, the Marine has <code>Marine_StimPackVO</code>.</p>
-                    <h4 id="death-sounds">Death Sounds</h4>
-                    <p>Units have a number of death sounds that are located within the <em>unit actor</em>'s <code>Death Effects</code>. These are usually identified by the Unit's name suffixed by <code>_DeathFX</code> and further suffixed with more specific variants such as <code>Eviscerate</code> and <code>Fire</code>. Here's a list of what we'd be interested in if we want to change all of them for our Marine:</p>
-                    <ul>
-                        <li><code>Marine_DeathFXBloodSpray</code></li>
-                        <li><code>Marine_DeathFXEat</code></li>
-                        <li><code>Marine_DeathFXEviscerate</code></li>
-                        <li><code>Marine_DeathFXFire</code></li>
-                    </ul>
-                    <p>The Marine also utilizes some more generic death sounds shared by multiple units:</p>
-                    <ul>
-                        <li><code>Uni_DeathFXAcid</code></li>
-                        <li><code>Uni_DeathFXSilentKill</code></li>
-                    </ul>
-                    <p>And finally, there's <code>Marine_Death</code>, which is the sound used by the <code>Marine_Death</code> actor.</p>
+                        <h4 id="voice-lines">Voice Lines</h4>
+                        <p>Voice lines are declared in the <em>unit actor</em>'s <code>Sound: Sounds</code> field. Voice Lines typically have the unit's name suffixed by the particular voice line index it's reprensenting such as <code>_What</code> and <code>_Ready</code>. Here's a list of the Marine's voice lines:</p>
+                        <ul>
+                            <li><code>Marine_Attack</code></li>
+                            <li><code>Marine_Help</code></li>
+                            <li><code>Marine_Pissed</code></li>
+                            <li><code>Marine_Ready</code></li>
+                            <li><code>Marine_What</code></li>
+                            <li><code>Marine_Yes</code></li>
+                        </ul>
+                        <p>Additionally, some <a href="#Ability">abilities</a> have custom voice lines that are played when the unit casts the ability that are defined in the <code>Ability Sounds</code> field. These typically have the unit's name suffixed by <code>_</code>, the ability name, and <code>VO</code>. In our case, the Marine has <code>Marine_StimPackVO</code>.</p>
+                        <h4 id="death-sounds">Death Sounds</h4>
+                        <p>Units have a number of death sounds that are located within the <em>unit actor</em>'s <code>Death Effects</code>. These are usually identified by the Unit's name suffixed by <code>_DeathFX</code> and further suffixed with more specific variants such as <code>Eviscerate</code> and <code>Fire</code>. Here's a list of what we'd be interested in if we want to change all of them for our Marine:</p>
+                        <ul>
+                            <li><code>Marine_DeathFXBloodSpray</code></li>
+                            <li><code>Marine_DeathFXEat</code></li>
+                            <li><code>Marine_DeathFXEviscerate</code></li>
+                            <li><code>Marine_DeathFXFire</code></li>
+                        </ul>
+                        <p>The Marine also utilizes some more generic death sounds shared by multiple units:</p>
+                        <ul>
+                            <li><code>Uni_DeathFXAcid</code></li>
+                            <li><code>Uni_DeathFXSilentKill</code></li>
+                        </ul>
+                        <p>And finally, there's <code>Marine_Death</code>, which is the sound used by the <code>Marine_Death</code> actor.</p>
+                    </div>
                 </div>
             </div>
             <div id="weapon-data" class="disabledElement">
