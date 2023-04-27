@@ -165,18 +165,18 @@ code pre {
     filter: sepia(100%) saturate(500%) brightness(95%) hue-rotate(60deg);
 }
 
-   .icon-abilities { content: url("images/ui-editoricon-data_types_abilities.png");    }
-      .icon-actors { content: url("images/ui-editoricon-data_types_actors.png");       }
-  .icon-behaviours { content: url("images/ui-editoricon-data_types_behaviours.png");   }
-     .icon-buttons { content: url("images/ui-editoricon-data_types_buttons.png");      }
-     .icon-effects { content: url("images/ui-editoricon-data_types_effects.png");      }
-      .icon-models { content: url("images/ui-editoricon-data_types_models.png");       }
-      .icon-movers { content: url("images/ui-editoricon-data_types_movers.png");       }
-.icon-requirements { content: url("images/ui-editoricon-data_types_requirements.png"); }
-      .icon-sounds { content: url("images/ui-editoricon-data_types_sounds.png");       }
-       .icon-units { content: url("images/ui-editoricon-data_types_units.png");        }
-    .icon-upgrades { content: url("images/ui-editoricon-data_types_upgrades.png");     }
-     .icon-weapons { content: url("images/ui-editoricon-data_types_weapons.png");      }
+   .icon-abilities { content: url("../images/ui-editoricon-data_types_abilities.png");    }
+      .icon-actors { content: url("../images/ui-editoricon-data_types_actors.png");       }
+  .icon-behaviours { content: url("../images/ui-editoricon-data_types_behaviours.png");   }
+     .icon-buttons { content: url("../images/ui-editoricon-data_types_buttons.png");      }
+     .icon-effects { content: url("../images/ui-editoricon-data_types_effects.png");      }
+      .icon-models { content: url("../images/ui-editoricon-data_types_models.png");       }
+      .icon-movers { content: url("../images/ui-editoricon-data_types_movers.png");       }
+.icon-requirements { content: url("../images/ui-editoricon-data_types_requirements.png"); }
+      .icon-sounds { content: url("../images/ui-editoricon-data_types_sounds.png");       }
+       .icon-units { content: url("../images/ui-editoricon-data_types_units.png");        }
+    .icon-upgrades { content: url("../images/ui-editoricon-data_types_upgrades.png");     }
+     .icon-weapons { content: url("../images/ui-editoricon-data_types_weapons.png");      }
 
 @media (prefers-color-scheme: dark) {
     html, body {
