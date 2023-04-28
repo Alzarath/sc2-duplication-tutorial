@@ -24,10 +24,13 @@ body {
     padding: 5px;
     background-color: #f5f5f5;
     font-size: 16px;
-    width: max-content;
-    min-width: 250px;
+    width: 250px;
+    max-width: 100%;
     max-height: 500px;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+    margin: 0px;
 }
 
 @media screen and (min-width: 600px) {
@@ -47,6 +50,11 @@ body {
     main {
         margin-right: 320px;
     }
+}
+
+.inlineList {
+    float: initial;
+    margin-right: 0;
 }
 
 img {
@@ -81,6 +89,31 @@ code pre {
 }
 
 .disabledElement {
+    color: #666;
+}
+.enabledElement .disabledElement {
+    color: #666;
+}
+.disabledElement a {
+    color: #449;
+}
+.enabledElement .disabledElement a {
+    color: #449;
+}
+.enabledElement {
+    color: black;
+}
+.disabledElement .enabledElement {
+    color: black;
+}
+.enabledElement a {
+    color: #66F;
+}
+.disabledElement .enabledElement a {
+    color: #66F;
+}
+
+.hiddenElement {
     display: none;
 }
 
@@ -90,6 +123,10 @@ code pre {
 
 .footnote {
     color: darkred;
+}
+
+.returnLink {
+    text-decoration: none;
 }
 
 .coreData, .docData, .docParentData, .nonstandardDependData, .standardDependData {
@@ -179,6 +216,30 @@ code pre {
     }
     code {
         background: #333;
+    }
+    .disabledElement {
+        color: #888;
+    }
+    .enabledElement .disabledElement {
+        color: #888;
+    }
+    .disabledElement a {
+        color: #449;
+    }
+    .enabledElement .disabledElement a {
+        color: #449;
+    }
+    .enabledElement {
+        color: whitesmoke;
+    }
+    .disabledElement .enabledElement {
+        color: whitesmoke;
+    }
+    .enabledElement a {
+        color: #66F;
+    }
+    .disabledElement .enabledElement a {
+        color: #66F;
     }
     .footnote {
         color: lightcoral;

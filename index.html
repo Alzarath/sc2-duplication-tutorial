@@ -19,149 +19,27 @@
                 <p>If your goal is to create a variant of an existing unit, the duplication target should be obvious. If your intention is to create something unique, I would still recommend duplicating a unit that mechanically resembles the unit you have in mind. There are a lot of different fields that can be glossed over, so you'll want to work with a good baseline. In this tutorial, we'll cover duplicating a Marine.</p>
             </div>
             <h1 id="title">How to Duplicate a Unit</h1>
-            <ul id="duplicateVisualization" class="duplicateList">
-                <li><input type="checkbox" class="duplicateCheckbox unitDataDupe" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span>
-                    <ul>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-abilities"/><span class="dupeText"> Abilities</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-attack.png"/><span class="dupeText standardDependData"> Attack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Marine - Stimpack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-move.png"/><span class="dupeText coreData"> Move</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-stop.png"/><span class="dupeText coreData"> Stop</span></li>
-                            </ul>
-                        </li>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText"> Actors</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Damage Model</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Damage Sound</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Impact Model</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Impact Sound</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Launch Model</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Launch Sound</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitDataDupe" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox weapDataDupe" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine Attack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitDataDupe" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine_Death</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Stimpack End Impact</span></li>
-                            </ul>
-                        </li>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-behaviours"/><span class="dupeText"> Behaviors</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-ability-terran-stimpack.png"/><span class="standardDependData dupeText"> Marine - Stimpack</span></li>
-                            </ul>
-                        </li>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-buttons"/><span class="dupeText"> Buttons</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-attack.png"/><span class="dupeText standardDependData"> Attack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-holdposition.png"/><span class="dupeText coreData"> Hold Position</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-move.png"/><span class="dupeText standardDependData"> Move</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-patrol.png"/><span class="dupeText coreData"> Patrol</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-stop.png"/><span class="dupeText coreData"> Stop</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Use Stimpack</span></li>
-                            </ul>
-                        </li>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-effects"/><span class="dupeText"> Effects</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox weapDataDupe" disabled><img class="dupeIcon icon-effects"/><span class="dupeText standardDependData"> Marine - Gauss Rifle (Damage)</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon icon-effects"/><span class="dupeText standardDependData"> Marine - Stim Pack (Apply Buff)</span></li>
-                            </ul>
-                        </li>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText"> Models</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox weapModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Blood Target Impact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Invisible</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox weapModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Attack Impact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox weapModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Attack Launch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox weapModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Bunker Attack Launch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Acid</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Blast</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Eat</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Eviscerate</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Fire</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Ragdoll</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Portrait - Marine</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Protoss Small Unit Death Low</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox abilModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Stimpack End Impact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Terran Small Unit Death Low</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> TerranSmallBiologicalUnitDeathLow</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Zerg Small Unit Death Low</span></li>
-                            </ul>
-                        </li>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-movers"/><span class="dupeText"> Movers</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-movers"/><span class="dupeText coreData"> Ground</span></li>
-                            </ul>
-                        </li>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-requirements"/><span class="dupeText"> Requirement Nodes</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-requirements"/><span class="dupeText standardDependData"> AllowUnit(Marine)</span></li>
-                            </ul>
-                        </li>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText"> Sounds</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Attack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox weapSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_AttackImpact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox weapSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_AttackLaunch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox weapSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_BunkerAttackLaunch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Death</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXBloodSpray</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXEat</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXEviscerate</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXFire</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Help</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Pissed</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Ready</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_StimPackVO</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_What</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Yes</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Uni_DeathFXAcid</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Uni_DeathFXSilentKill</span></li>
-                            </ul>
-                        </li>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-upgrades"/><span class="dupeText"> Upgrades</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-techupgrade-terran-combatshield-color.png"/><span class="dupeText standardDependData"> Marine - Combat Shield</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Stimpack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryarmorlevel1.png"/><span class="dupeText standardDependData"> Terran Infantry Armor Level 1</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryarmorlevel2.png"/><span class="dupeText standardDependData"> Terran Infantry Armor Level 2</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryarmorlevel3.png"/><span class="dupeText standardDependData"> Terran Infantry Armor Level 3</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-upgrades"/><span class="dupeText standardDependData"> Terran Infantry Armors</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-upgrades"/><span class="dupeText standardDependData"> Terran Infantry Weapons</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel1.png"/><span class="dupeText standardDependData"> Terran Infantry Weapon Level 1</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel2.png"/><span class="dupeText standardDependData"> Terran Infantry Weapon Level 2</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel3.png"/><span class="dupeText standardDependData"> Terran Infantry Weapon Level 3</span></li>
-                            </ul>
-                        </li>
-                        <li><input type="checkbox" class="duplicateCheckbox weapDataDupe" disabled><img class="dupeIcon icon-weapons"/><span class="dupeText"> Weapons</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox weapDataDupe" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel0.png"/><span class="dupeText standardDependData"> Marine - C-14 Gauss Rifle</span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
             <p>Before you start duplicating, you need to determine what aspects of the unit you want to make modifications to. The more things you choose, the more control you'll have, but the more space used by your map. It's best to avoid duplicating anything that you don't need to.</p>
             <p><strong>Select the data that you want to duplicate:</strong></p>
             <ul id="options" class="cleanList">
-                <li><input type="checkbox" id="unitDataCB" affectedBoxes="unitDataDupe" checked> <a class="disabledLink" href="#unit-data">Unit Data</a>
-                    <ul class="cleanList disabledElement">
-                        <li><input type="checkbox" id="unitDataModelsCB" affectedBoxes="unitModelDataDupe"> <a class="disabledLink" href="#unit-models">Models</a><span class="footnote">*</span></li>
-                        <li><input type="checkbox" id="unitDataSoundsCB" affectedBoxes="unitSoundDataDupe"> <a class="disabledLink" href="#unit-sounds">Sounds</a><span class="footnote">*</span></li>
+                <li><input type="checkbox" id="unitDataCB" affectedBoxes="unitDataDupe" checked> <a href="#unit-data">Unit Data</a>
+                    <ul class="cleanList">
+                        <li><input type="checkbox" id="unitDataModelsCB" affectedBoxes="unitModelDataDupe"> <a href="#unit-models">Models</a><span class="footnote">*</span></li>
+                        <li><input type="checkbox" id="unitDataSoundsCB" affectedBoxes="unitSoundDataDupe"> <a href="#unit-sounds">Sounds</a><span class="footnote">*</span></li>
                     </ul>
                 </li>
                 <li>
-                    <input type="checkbox" id="weapDataCB" affectedBoxes="weapDataDupe"> <a class="disabledLink" href="#weapon-data">Weapon Data</a>
-                    <ul class="cleanList disabledElement">
-                        <li><input type="checkbox" id="weapDataModelsCB" affectedBoxes="weapModelDataDupe"> <a class="disabledLink" href="#weapon-models">Models</a><span class="footnote">*</span></span></li>
-                        <li><input type="checkbox" id="weapDataSoundsCB" affectedBoxes="weapSoundDataDupe"> <a class="disabledLink" href="#weapon-sounds">Sounds</a><span class="footnote">*</span></li>
+                    <input type="checkbox" id="weapDataCB" affectedBoxes="weapDataDupe"> <a href="#weapon-data">Weapon Data</a>
+                    <ul class="cleanList">
+                        <li><input type="checkbox" id="weapDataModelsCB" affectedBoxes="weapModelDataDupe"> <a href="#weapon-models">Models</a><span class="footnote">*</span></span></li>
+                        <li><input type="checkbox" id="weapDataSoundsCB" affectedBoxes="weapSoundDataDupe"> <a href="#weapon-sounds">Sounds</a><span class="footnote">*</span></li>
                     </ul>
                 </li>
                 <li>
-                    <input type="checkbox" id="abilDataCB" affectedBoxes="abilDataDupe"> <a class="disabledLink" href="#ability-data">Ability Data</a>
-                    <ul class="cleanList disabledElement">
-                        <li><input type="checkbox" id="abilDataModelsCB" affectedBoxes="abilModelDataDupe"> <a class="disabledLink" href="#ability-models">Models</a><span class="footnote">*</span></li>
-                        <li><input type="checkbox" id="abilDataSoundsCB" affectedBoxes="abilSoundDataDupe"> <a class="disabledLink" href="#ability-sounds">Sounds</a><span class="footnote">*</span></li>
+                    <input type="checkbox" id="abilDataCB" affectedBoxes="abilDataDupe"> <a href="#ability-data">Ability Data</a>
+                    <ul class="cleanList">
+                        <li><input type="checkbox" id="abilDataModelsCB" affectedBoxes="abilModelDataDupe"> <a href="#ability-models">Models</a><span class="footnote">*</span></li>
+                        <li><input type="checkbox" id="abilDataSoundsCB" affectedBoxes="abilSoundDataDupe"> <a href="#ability-sounds">Sounds</a><span class="footnote">*</span></li>
                     </ul>
                 </li>
             </ul>
@@ -176,12 +54,18 @@
                 <li><span class="docParentData">Light Green data</span> is part of the map or mod that you're editing. It's a child of other data and hasn't been edited directly.</li>
             </ul>
             <div id="unit-data" class="disabledElement">
-                <h2>Unit Data</h2>
+                <h2>Unit Data <a class="returnLink" href="#">^</a></h2>
                 <ul class="duplicateList">
-                    <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span></li>
-                    <li>---</li>
-                    <li>
+                    <li><input type="checkbox" class="duplicateCheckbox unitDataDupe" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span>
                         <ul>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-abilities"/><span class="dupeText"> Abilities</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-attack.png"/><span class="dupeText standardDependData"> Attack</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Marine - Stimpack</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-move.png"/><span class="dupeText coreData"> Move</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-stop.png"/><span class="dupeText coreData"> Stop</span></li>
+                                </ul>
+                            </li>
                             <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText"> Actors</span>
                                 <ul>
                                     <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Damage Model</span></li>
@@ -190,10 +74,104 @@
                                     <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Impact Sound</span></li>
                                     <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Launch Model</span></li>
                                     <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Launch Sound</span></li>
-                                    <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitDataDupe" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span></li>
                                     <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine Attack</span></li>
-                                    <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine_Death</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitDataDupe" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine_Death</span></li>
                                     <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Stimpack End Impact</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-behaviours"/><span class="dupeText"> Behaviors</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-ability-terran-stimpack.png"/><span class="standardDependData dupeText"> Marine - Stimpack</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-buttons"/><span class="dupeText"> Buttons</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-attack.png"/><span class="dupeText standardDependData"> Attack</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-holdposition.png"/><span class="dupeText coreData"> Hold Position</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-move.png"/><span class="dupeText standardDependData"> Move</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-patrol.png"/><span class="dupeText coreData"> Patrol</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-stop.png"/><span class="dupeText coreData"> Stop</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Use Stimpack</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-effects"/><span class="dupeText"> Effects</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-effects"/><span class="dupeText standardDependData"> Marine - Gauss Rifle (Damage)</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-effects"/><span class="dupeText standardDependData"> Marine - Stim Pack (Apply Buff)</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText"> Models</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Blood Target Impact</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Invisible</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Attack Impact</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Attack Launch</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Bunker Attack Launch</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Acid</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Blast</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Eat</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Eviscerate</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Fire</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Ragdoll</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Portrait - Marine</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Protoss Small Unit Death Low</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Stimpack End Impact</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Terran Small Unit Death Low</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> TerranSmallBiologicalUnitDeathLow</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Zerg Small Unit Death Low</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-movers"/><span class="dupeText"> Movers</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-movers"/><span class="dupeText coreData"> Ground</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-requirements"/><span class="dupeText"> Requirement Nodes</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-requirements"/><span class="dupeText standardDependData"> AllowUnit(Marine)</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText"> Sounds</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Attack</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_AttackImpact</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_AttackLaunch</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_BunkerAttackLaunch</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Death</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXBloodSpray</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXEat</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXEviscerate</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXFire</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Help</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Pissed</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Ready</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_StimPackVO</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_What</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox unitSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Yes</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Uni_DeathFXAcid</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Uni_DeathFXSilentKill</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-upgrades"/><span class="dupeText"> Upgrades</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-techupgrade-terran-combatshield-color.png"/><span class="dupeText standardDependData"> Marine - Combat Shield</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Stimpack</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryarmorlevel1.png"/><span class="dupeText standardDependData"> Terran Infantry Armor Level 1</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryarmorlevel2.png"/><span class="dupeText standardDependData"> Terran Infantry Armor Level 2</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryarmorlevel3.png"/><span class="dupeText standardDependData"> Terran Infantry Armor Level 3</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-upgrades"/><span class="dupeText standardDependData"> Terran Infantry Armors</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-upgrades"/><span class="dupeText standardDependData"> Terran Infantry Weapons</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel1.png"/><span class="dupeText standardDependData"> Terran Infantry Weapons Level 1</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel2.png"/><span class="dupeText standardDependData"> Terran Infantry Weapons Level 2</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel3.png"/><span class="dupeText standardDependData"> Terran Infantry Weapons Level 3</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-weapons"/><span class="dupeText"> Weapons</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel0.png"/><span class="dupeText standardDependData"> Marine - C-14 Gauss Rifle</span></li>
                                 </ul>
                             </li>
                         </ul>
@@ -208,32 +186,7 @@
                     <p>Some structures will also have a Splat actor that can be useful to duplicate which creates an image beneath the structure making it feel more grounded in the world. It uses the unit's name followed by <code> Splat</code>. For now we're only focusing on a unit.</p>
                 </div>
                 <div id="unit-models" class="disabledElement">
-                    <h3>Unit Models</h3>
-                    <ul class="duplicateList">
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText"> Models</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Blood Target Impact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Invisible</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Attack Impact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Attack Launch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Bunker Attack Launch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Acid</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Blast</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Eat</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Eviscerate</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Fire</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Ragdoll</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Portrait - Marine</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Protoss Small Unit Death Low</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Stimpack End Impact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Terran Small Unit Death Low</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> TerranSmallBiologicalUnitDeathLow</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Zerg Small Unit Death Low</span></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h3>Unit Models <a class="returnLink" href="#">^</a></h3>
                     <p>In most cases you should change the <em>unit actor</em>'s fields to specify different models, but duplicating models is useful if you're importing new model files or using models that don't have associated model data in your dependencies.</p>
                     <p>While all of a marine's models are shown here, it's still best practice to duplicate as few items as possible. If you don't have a replacement model for any of the following or one already exists in the model data, you likely do not need to duplicate it.</p>
                     <div class="rightShifted">
@@ -255,30 +208,7 @@
                     </div>
                 </div>
                 <div id="unit-sounds" class="disabledElement">
-                    <h3>Unit Sounds</h3>
-                    <ul class="duplicateList">
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText"> Sounds</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Attack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_AttackImpact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_AttackLaunch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_BunkerAttackLaunch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Death</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXBloodSpray</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXEat</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXEviscerate</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXFire</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Help</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Pissed</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Ready</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_StimPackVO</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_What</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Yes</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Uni_DeathFXAcid</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Uni_DeathFXSilentKill</span></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h3>Unit Sounds <a class="returnLink" href="#">^</a></h3>
                     <p>In most cases you should change the <em>unit actor</em>'s fields to specify different sounds, but duplicating sounds is useful if you're importing new sound files or using sounds that don't have associated sound data in your dependencies.</p>
                     <p>While all of a marine's sounds are shown here, it's still best practice to duplicate as few items as possible. If you don't have a replacement sound for any of the following or one already exists in the sound data, you likely do not need to duplicate it.</p>
                     <div class="rightShifted">
@@ -292,7 +222,7 @@
                             <li><code>Marine_What</code></li>
                             <li><code>Marine_Yes</code></li>
                         </ul>
-                        <p>Additionally, some <a href="#Ability">abilities</a> have custom voice lines that are played when the unit casts the ability that are defined in the <code>Ability Sounds</code> field. These typically have the unit's name suffixed by <code>_</code>, the ability name, and <code>VO</code>. In our case, the Marine has <code>Marine_StimPackVO</code>.</p>
+                        <p>Additionally, some abilities have custom voice lines that are played when the unit casts the ability that are defined in the <code>Ability Sounds</code> field. These typically have the unit's name suffixed by <code>_</code>, the ability name, and <code>VO</code>. In our case, the Marine has <code>Marine_StimPackVO</code>.</p>
                         <h4 id="death-sounds">Death Sounds</h4>
                         <p>Units have a number of death sounds that are located within the <em>unit actor</em>'s <code>Death Effects</code>. These are usually identified by the Unit's name suffixed by <code>_DeathFX</code> and further suffixed with more specific variants such as <code>Eviscerate</code> and <code>Fire</code>. Here's a list of what we'd be interested in if we want to change all of them for our Marine:</p>
                         <ul>
@@ -311,41 +241,59 @@
                 </div>
             </div>
             <div id="weapon-data" class="disabledElement">
-                <h2>Weapon Data</h2>
+                <h2>Weapon Data <a class="returnLink" href="#">^</a></h2>
                 <ul class="duplicateList">
-                    <ul>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText"> Actors</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Damage Model</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Damage Sound</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Impact Model</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Impact Sound</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Launch Model</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Launch Sound</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine Attack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine_Death</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Stimpack End Impact</span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <li>---</li>
-                    <ul>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-effects"/><span class="dupeText"> Effects</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-effects"/><span class="dupeText standardDependData"> Marine - Gauss Rifle (Damage)</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-effects"/><span class="dupeText standardDependData"> Marine - Stim Pack (Apply Buff)</span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <li>---</li>
-                    <ul>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-weapons"/><span class="dupeText"> Weapons</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel0.png"/><span class="dupeText standardDependData"> Marine - C-14 Gauss Rifle</span></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <li><input type="checkbox" class="duplicateCheckbox weapDataDupe" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel0.png"/><span class="dupeText standardDependData"> Marine - C-14 Gauss Rifle</span>
+                        <ul>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText"> Actors</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Damage Model</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Damage Sound</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Impact Model</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Impact Sound</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Launch Model</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Launch Sound</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox weapDataDupe" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine Attack</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox weapDataDupe" disabled><img class="dupeIcon icon-effects"/><span class="dupeText"> Effects</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox weapDataDupe" disabled><img class="dupeIcon icon-effects"/><span class="dupeText standardDependData"> Marine - Gauss Rifle (Damage)</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText"> Models</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Blood Target Impact</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox weapModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Attack Impact</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox weapModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Attack Launch</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox weapModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Bunker Attack Launch</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText"> Sounds</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox weapSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_AttackImpact</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox weapSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_AttackLaunch</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox weapSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_BunkerAttackLaunch</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-units"/><span class="dupeText"> Units</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Changeling (Marine with shield)</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Changeling (Marine)</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-missing-kaeo.png"/><span class="dupeText standardDependData"> Scope Test</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-upgrades"/><span class="dupeText"> Upgrades</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-upgrades"/><span class="dupeText standardDependData"> Terran Infantry Weapons</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel1.png"/><span class="dupeText standardDependData"> Terran Infantry Weapons Level 1</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel2.png"/><span class="dupeText standardDependData"> Terran Infantry Weapons Level 2</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-upgrade-terran-infantryweaponslevel3.png"/><span class="dupeText standardDependData"> Terran Infantry Weapons Level 3</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
                 <p>Most weapons can also be duplicated from the unit's data, although there are some instances of complex or unusual weapons that use effect trees that the object explorer will not properly track.</p> <!-- TODO: Create "effect tree following" tutorial and reference it here -->
                 <p>Weapons are often simple instant or projectile-based effect trees. The first thing you'll want to duplicate is the weapon data itself, which has the name of the weapon, usually as shown in-game and typically is located toward the bottom of the object tree. Sometimes the weapon will also be suffixed by our unit name and a hyphen. In our case, we want to add <code>Marine - C-14 Gauss Rifle</code>.</p>
@@ -354,7 +302,7 @@
                 <p>Another formula uses the name of the unit followed by an effect descriptor. Here's an example of the Hellbat's weapon effect tree for reference:</p>
                 <details class="rightShifted">
                     <summary>Hellbat Example</summary>
-                    <ul class="duplicateList">
+                    <ul class="duplicateList inlineList">
                         <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-effects"/><span class="dupeText"> Effects</span>
                             <ul>
                                 <li><span class="standardDependData"><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-effects"/><span class="dupeText"> Hellion Tank</span></span></li>
@@ -370,32 +318,7 @@
                 <p>A weapon will usually have an action actor, often referred to as an <strong>attack actor</strong> for weapons, that handle the majority of how the weapon is visualized (models and sounds) in the world. Mostly, these are represented by our unit name suffixed by <code> Attack</code>. We want <code>Marine Attack</code>.</p>
                 <p>Weapons with projectiles have a Launch Missile effect (see above about duplicating effects). They also have a Missile actor, which is usually formatted with the unit's name suffixed by <code> Attack Missile</code> and a Weapon unit that is usually the unit's name followed by <code> Weapon</code>. You will want to duplicate <em>all</em> of these for the best chance that they get linked together.</p>
                 <div id="weapon-models" class="disabledElement">
-                    <h3>Weapon Models</h3>
-                    <ul class="duplicateList">
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText"> Models</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Blood Target Impact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Invisible</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Attack Impact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Attack Launch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Bunker Attack Launch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Acid</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Blast</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Eat</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Eviscerate</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Fire</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Ragdoll</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Portrait - Marine</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Protoss Small Unit Death Low</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Stimpack End Impact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Terran Small Unit Death Low</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> TerranSmallBiologicalUnitDeathLow</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Zerg Small Unit Death Low</span></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h3>Weapon Models <a class="returnLink" href="#">^</a></h3>
                     <p>In most cases you'll probably just want to change the <em>attack actor</em>'s fields to specify different models, but duplicating models is useful if you're importing new model files or using models that don't have associated model data in your dependencies.</p>
                     <p><em>Attack actor</em>s contain the majority of references to model data for a units' weapons.</p>
                     <p>The impact models are located in the <em>attack actor</em>'s <code>Impact Map</code> field. The impact model usually follows the format of the unit's name, followed by <code> Attack Impact</code>. In our case <code>Marine Attack Impact</code>. There can be other models that can be found in the field as well depending on the target, such as how the Marine uses the generic <code>Blood Target Impact</code> when hitting Flesh units.</p>
@@ -403,30 +326,7 @@
                     <p>In some cases, such as with the Marine, there is can be an additional launch model that comes from a container such as the Bunker located in the <em>attack actor</em>'s <code>Container Assets</code>. The Marine uses <code>Marine Bunker Attack Launch</code> for this.</p>
                 </div>
                 <div id="weapon-sounds" class="disabledElement">
-                    <h3>Weapon Sounds</h3>
-                    <ul class="duplicateList">
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText"> Sounds</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Attack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_AttackImpact</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_AttackLaunch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_BunkerAttackLaunch</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Death</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXBloodSpray</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXEat</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXEviscerate</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXFire</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Help</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Pissed</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Ready</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_StimPackVO</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_What</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Yes</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Uni_DeathFXAcid</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Uni_DeathFXSilentKill</span></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h3>Weapon Sounds <a class="returnLink" href="#">^</a></h3>
                     <p>In most cases you'll probably just want to change the <em>attack actor</em>'s fields to specify different sounds, but duplicating sounds is useful if you're importing new sound files or using sounds that don't have associated sound data in your dependencies.</p>
                     <p><em>Attack actor</em>s contain the majority of references to sound data for units' weapons.</p>
                     <p>The impact sounds are located in the <em>attack actor</em>'s <code>Impact Map</code> field. The impact sound usually follows the format of the unit's name, followed by <code>_AttackImpact</code>. In our case <code>Marine_AttackImpact</code>. There can be other sounds that can be found in the field as well depending on the target.</p>
@@ -435,78 +335,120 @@
                 </div>
             </div>
             <div id="ability-data" class="disabledElement">
-                <h2>Ability Data</h2>
+                <h2>Ability Data <a class="returnLink" href="#">^</a></h2>
                 <ul class="duplicateList">
-                    <ul>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-abilities"/><span class="dupeText"> Abilities</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-attack.png"/><span class="dupeText standardDependData"> Attack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Marine - Stimpack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-move.png"/><span class="dupeText coreData"> Move</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-stop.png"/><span class="dupeText coreData"> Stop</span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText"> Actors</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Damage Model</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Damage Sound</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Impact Model</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Impact Sound</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Launch Model</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText coreData"> Generic Attack Launch Sound</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine Attack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine_Death</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Stimpack End Impact</span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-behaviours"/><span class="dupeText"> Behaviors</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon customImage tintedImage" src="images/btn-ability-terran-stimpack.png"/><span class="standardDependData dupeText"> Marine - Stimpack</span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-buttons"/><span class="dupeText"> Buttons</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-attack.png"/><span class="dupeText standardDependData"> Attack</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-holdposition.png"/><span class="dupeText coreData"> Hold Position</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-move.png"/><span class="dupeText standardDependData"> Move</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-patrol.png"/><span class="dupeText coreData"> Patrol</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-command-stop.png"/><span class="dupeText coreData"> Stop</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Use Stimpack</span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-effects"/><span class="dupeText"> Effects</span>
-                            <ul>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-effects"/><span class="dupeText standardDependData"> Marine - Gauss Rifle (Damage)</span></li>
-                                <li><input type="checkbox" class="duplicateCheckbox" disabled checked><img class="dupeIcon icon-effects"/><span class="dupeText standardDependData"> Marine - Stim Pack (Apply Buff)</span></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Marine - Stimpack</span>
+                        <ul>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-abilities"/><span class="dupeText"> Abilities</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Stimpack Redirect</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-actors"/><span class="dupeText"> Actors</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Changeling Marine</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Changeling Marine Shield</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Marine_Stimpack</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Stimpack End Impact</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon icon-actors"/><span class="dupeText standardDependData"> Stimpack Start Impact</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon icon-behaviours"/><span class="dupeText"> Behaviors</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon customImage tintedImage" src="images/btn-ability-terran-stimpack.png"/><span class="standardDependData dupeText"> Marine - Stimpack</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-buttons"/><span class="dupeText"> Buttons</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon customImage" src="images/btn-ability-terran-stimpack-color.png"/><span class="dupeText standardDependData"> Use Stimpack</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon icon-effects"/><span class="dupeText"> Effects</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox abilDataDupe" disabled><img class="dupeIcon icon-effects"/><span class="dupeText standardDependData"> Marine - Stim Pack (Apply Buff)</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText"> Models</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Changeling Death Marine</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Invisible</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Acid</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Blast</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Eat</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Eviscerate</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Fire</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Marine Death Ragdoll</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Portrait - Marine</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Protoss Small Unit Death Low</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox abilModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Stimpack End Impact</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox abilModelDataDupe" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Stimpack Start Impact</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Terran Small Unit Death Low</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> TerranSmallBiologicalUnitDeathLow</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-models"/><span class="dupeText standardDependData"> Zerg Small Unit Death Low</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-requirements"/><span class="dupeText"> Requirement Nodes</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-requirements"/><span class="dupeText standardDependData"> CountUpgrade(Stimpack,CompleteOnly){Research Stimpack at the Barracks Tech Lab}[TechTreeCheat]</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-requirements"/><span class="dupeText standardDependData"> CountUpgrade(Stimpack,QueuedOrBetter)</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-requirements"/><span class="dupeText"> Requirements</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-requirements"/><span class="dupeText standardDependData"> Use Stimpack</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText"> Sounds</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Changeling_MarinePissed</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Changeling_MarineReady</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Changeling_MarineWhat</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Changeling_MarineYes</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Changeling_Explode</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Attack</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXBloodSpray</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXEat</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXEviscerate</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_DeathFXFire</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Help</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Pissed</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Ready</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox abilSoundDataDupe" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_StimPack</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_StimPackVO</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_What</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Marine_Yes</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Uni_DeathFXAcid</span></li>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-sounds"/><span class="dupeText standardDependData"> Uni_DeathFXSilentKill</span></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon icon-units"/><span class="dupeText"> Units</span>
+                                <ul>
+                                    <li><input type="checkbox" class="duplicateCheckbox" disabled><img class="dupeIcon customImage" src="images/btn-unit-terran-marine.png"/><span class="dupeText standardDependData"> Marine</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
                 <p>Abilities tend to vary pretty wildly, so it would serve to follow ability effect trees to understand how they work. Unfortunately the number of different naming schemes that abilities tend to follow is too vast to give a thorough enough explanation, but for the most part, if an effect or actor has the ability name in its name, it's probably safe to assume it's associated with it.</p> <!-- TODO: Create "effect tree following" tutorial and reference it here -->
+                <p>StimPack has a few different missing entries when browsing the object exporer for duplicating the Marine. This is an example of why it can be better to duplicate each ability from the ability itself and then replace them on the unit after the fact. This example will use this method for completion sake.</p>
                 <p>For our case, the Marine's StimPack is a pretty simple ability. There are a few different parts of the Stimpack we would want to duplicate. The ability data itself, <code>Marine - StimPack</code> is the easy one.</p>
                 <p>The effect data is also fairly obvious, using a similar name to our ability, <code>Marine - Stim Pack (Apply Buff)</code>.</p>
                 <p>The behavior data is again similar to the ability name, <code>Marine - Stimpack</code>.</p>
                 <p>There is also a button that you can duplicate called <code>Use Stimpack</code> if you want to change the button's text, name, or hotkey.</p>
-                <p>Unfortunately, StimPack actually has <em>three</em> actor data that we would probably want to duplicate. <code>Stimpack End Impact</code>, <code>Stimpack Start Impact</code>, and <code>Marine_Stimpack</code>. The object explorer only found the former, so the others are not visible when trying to duplicate the unit. This is an example of why it can be better to duplicate each ability from the ability itself and then replace them on the unit after the fact.</p>
-                <p>In the particular case of the Stimpack, there is an upgrade that must be researched to unlock it. There are many ways to handle this. The easiest would be to ignore it, and the ability will only be accessible when you unlock the stimpack upgrade. If you want it to always be available, you could remove the requirement from the <em>ability data</em>'s <code>Commands</code>' <code>Execute</code> field. Or you could create a new upgrade and requirement, but all of that's beyond the scope of this tutorial.</p>
+                <p>StimPack actually has three pieces of actor data that we would want to duplicate. <code>Stimpack End Impact</code>, <code>Stimpack Start Impact</code> around model actors and <code>Marine_Stimpack</code> is a sound actor.</p>
+                <p>Stimpack is associated with an upgrade that must be researched to unlock it. There are many ways to handle this. The easiest would be to ignore it, and the ability will only be accessible when you unlock the stimpack upgrade. If you want it to always be available, you could remove the requirement from the <em>ability data</em>'s <code>Commands</code>' <code>Execute</code> field. Or you could create a new upgrade and requirement, but that's beyond the scope of this tutorial.</p>
                 <div id="ability-models" class="disabledElement">
-                    <h3>Ability Models</h3>
+                    <h3>Ability Models <a class="returnLink" href="#">^</a></h3>
                     <p>In most cases you'll probably just want to change the models located in your ability's model actor's fields to specify different models, but duplicating models is useful if you're importing new model files or using models that don't have associated model data in your dependencies.</p>
-                    <p>As above, you can usually guess what models belong to an ability based on its name. In our case, they are similar to the model actors <code>Stimpack End Impact</code> and <code>Stimpack Start Impact</code>.</p>
+                    <p>Stimpack's model data uses names that are similar to the ability data: <code>Stimpack End Impact</code> and <code>Stimpack Start Impact</code>.</p>
                 </div>
                 <div id="ability-sounds" class="disabledElement">
-                    <h3>Ability Sounds</h3>
+                    <h3>Ability Sounds <a class="returnLink" href="#">^</a></h3>
                     <p>In most cases you'll probably just want to change the sounds located in your ability's sound actor's fields to specify different sounds, but duplicating sounds is useful if you're importing new sound files or using sounds that don't have associated sound data in your dependencies.</p>
-                    <p>As above, you can usually guess what sounds belong to an ability based on its name. In our case, it is similar to the sound actor <code>Marine_Stimpack</code>.</p>
+                    <p>Stimpack's sound data uses a name that is similar to our ability data: <code>Marine_Stimpack</code>.</p>
                 </div>
             </div>
         </main>
