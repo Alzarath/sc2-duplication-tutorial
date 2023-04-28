@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Unit Duplication Tutorial</title>
+        <title>Data Duplication Tutorial</title>
         <meta charset="utf-8" />
         <meta name="generator" content="https://github.com/EdJoPaTo/markdown-to-standalone-html 0.5.0" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,10 @@
         <a class="github-fork-ribbon right-top" href="https://github.com/alzarath/sc2-duplication-tutorial" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
         <main>
             <h1 id="title">Unit Duplication</h1>
-            <p>Duplicating units allows you to create separate units that have different attributes from the originals. It can even be used as a baseline to create an entirely new unit.</p>
+            <p>Duplicating data allows you to create separate data that has different attributes from the source. It can even be used as a baseline to create entirely new data.</p>
             <div class="rightShifted">
                 <h2>What should I duplicate?</h2>
-                <p>If your goal is to create a variant of an existing unit, the duplication target should be obvious. If your intention is to create something unique, I would still recommend duplicating a unit that mechanically resembles the unit you have in mind. There are a lot of different fields that can be glossed over, so you'll want to work with a good baseline. In this tutorial, we'll cover duplicating a Marine.</p>
+                <p>When duplicating a unit, if your goal is to create a variant of an existing unit, the duplication target should be obvious. If your intention is to create something unique, I would still recommend duplicating a unit that mechanically resembles the unit you have in mind. There are a lot of different fields that can be glossed over, so you'll want to work with a good baseline. In this tutorial, we'll cover duplicating a <a href="#unit-data">Marine</a>, its <a href="#weapon-data">weapon</a>, and its <a href="#ability-data">Stimpack ability</a>.</p>
             </div>
             <h1 id="title">How to Duplicate a Unit</h1>
             <p>Before you start duplicating, you need to determine what aspects of the unit you want to make modifications to. The more things you choose, the more control you'll have, but the more space used by your map. It's best to avoid duplicating anything that you don't need to.</p>
@@ -42,6 +42,7 @@
                         <li><input type="checkbox" id="abilDataSoundsCB" affectedBoxes="abilSoundDataDupe"> <a href="#ability-sounds">Sounds</a><span class="footnote">*</span></li>
                     </ul>
                 </li>
+                <li><a href="#afterword">Afterword</a></li>
                 <li><a href="#pitfalls">Common Pitfalls</a></li>
             </ul>
             <p>Data that is desirable for duplication will be checked on the object explorers shown on this page depending on what you've selected.</p>
@@ -297,7 +298,7 @@
                         </ul>
                     </li>
                 </ul>
-                <p>Most weapons can also be duplicated from the unit's data, although there are some instances of complex or unusual weapons that use effect trees that the object explorer will not properly track.</p> <!-- TODO: Create "effect tree following" tutorial and reference it here -->
+                <p>Most weapons can also be duplicated from the unit's data, although there are some instances of complex or unusual weapons that use effect trees that the object explorer will not properly track.</p> <!-- TODO: Effect Tree Navigation tutorial? -->
                 <p>Weapons are often simple instant or projectile-based effect trees. The first thing you'll want to duplicate is the weapon data itself, which has the name of the weapon, usually as shown in-game and typically is located toward the bottom of the object tree. Sometimes the weapon will also be suffixed by our unit name and a hyphen. In our case, we want to add <code>Marine - C-14 Gauss Rifle</code>.</p>
                 <p>You will probably want to duplicate all of a weapon's effects. The names here can vary but usually follow one of two formulas:</p>
                 <p>The unit named, followed by a hyphen, followed by the weapon name, followed by a descriptor of the effect, sometimes in parentheses. This is what our Marine uses. Seeing how we have a very simple effect chain with Marine, there is only one effect, <code>Marine - C-14 Gauss Rifle (Damage)</code>.</p>
@@ -435,7 +436,7 @@
                         </ul>
                     </li>
                 </ul>
-                <p>Abilities tend to vary pretty wildly, so it would serve to follow ability effect trees to understand how they work. Unfortunately the number of different naming schemes that abilities tend to follow is too vast to give a thorough enough explanation, but for the most part, if an effect or actor has the ability name in its name, it's probably safe to assume it's associated with it.</p> <!-- TODO: Create "effect tree following" tutorial and reference it here -->
+                <p>Abilities tend to vary pretty wildly, so it would serve to follow ability effect trees to understand how they work. Unfortunately the number of different naming schemes that abilities tend to follow is too vast to give a thorough enough explanation, but for the most part, if an effect or actor has the ability name in its name, it's probably safe to assume it's associated with it.</p> <!-- TODO: Effect Tree Navigation tutorial? -->
                 <p>StimPack has a few different missing entries when browsing the object exporer for duplicating the Marine. This is an example of why it can be better to duplicate each ability from the ability itself and then replace them on the unit after the fact. This example will use this method for completion sake.</p>
                 <p>For our case, the Marine's StimPack is a pretty simple ability. There are a few different parts of the Stimpack we would want to duplicate. The ability data itself, <code>Marine - StimPack</code> is the easy one.</p>
                 <p>The effect data is also fairly obvious, using a similar name to our ability, <code>Marine - Stim Pack (Apply Buff)</code>.</p>
@@ -454,6 +455,15 @@
                     <p>Stimpack's sound data uses a name that is similar to our ability data: <code>Marine_Stimpack</code>.</p>
                 </div>
                 <p>After duplicating everything, you can return to the unit and replace the ability with the newly duplicated ability in the unit's <code>Ability</code> field.</p>
+            </div>
+            <div id="afterword">
+                <h2>Afterword <a class="returnLink" href="#">^</a></h2>
+                <p>When you've finished duplicating all of your data, what should you do?</p>
+                <ul>
+                    <li><p>It's beneficial to change all of the duplicated data's IDs to fit your new data. <code>Marine2</code> is not a very descriptive ID and it only becomes worse if you try to make more duplicates of the same unit. You can try to follow the existing formats used by your duplicated data or choose a way to organize them that's best for you.</p></li>
+                    <li><p>Give your data different names or editor prefixes/suffixes to distinguish them from the source material, otherwise it can be more difficult to find the appropriate data.</p></li>
+                    <li><p>Ensure all of your data is linked properly.</p></li> <!-- TODO: Data linking tutorial? -->
+                </ul>
             </div>
             <div id="pitfalls">
                 <h2>Common Pitfalls <a class="returnLink" href="#">^</a></h2>
