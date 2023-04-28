@@ -29,19 +29,20 @@
                     </ul>
                 </li>
                 <li>
-                    <input type="checkbox" id="weapDataCB" affectedBoxes="weapDataDupe"> <a href="#weapon-data">Weapon Data</a>
+                    <input type="checkbox" id="weapDataCB" affectedBoxes="weapDataDupe" checked> <a href="#weapon-data">Weapon Data</a>
                     <ul class="cleanList">
                         <li><input type="checkbox" id="weapDataModelsCB" affectedBoxes="weapModelDataDupe"> <a href="#weapon-models">Models</a><span class="footnote">*</span></span></li>
                         <li><input type="checkbox" id="weapDataSoundsCB" affectedBoxes="weapSoundDataDupe"> <a href="#weapon-sounds">Sounds</a><span class="footnote">*</span></li>
                     </ul>
                 </li>
                 <li>
-                    <input type="checkbox" id="abilDataCB" affectedBoxes="abilDataDupe"> <a href="#ability-data">Ability Data</a>
+                    <input type="checkbox" id="abilDataCB" affectedBoxes="abilDataDupe" checked> <a href="#ability-data">Ability Data</a>
                     <ul class="cleanList">
                         <li><input type="checkbox" id="abilDataModelsCB" affectedBoxes="abilModelDataDupe"> <a href="#ability-models">Models</a><span class="footnote">*</span></li>
                         <li><input type="checkbox" id="abilDataSoundsCB" affectedBoxes="abilSoundDataDupe"> <a href="#ability-sounds">Sounds</a><span class="footnote">*</span></li>
                     </ul>
                 </li>
+                <li><a href="#pitfalls">Common Pitfalls</a></li>
             </ul>
             <p>Data that is desirable for duplication will be checked on the object explorers shown on this page depending on what you've selected.</p>
             <p class="footnote">*There is a difference between a model file and model data, as well as a sound file and sound data. In this tutorial I'm only referring to model data and sound data. Most model files and sound files already have model data and sound data that you can reference in actor fields, so I personally <strong>do not</strong> recommend duplicating them unless you need to.</p>
@@ -53,6 +54,7 @@
                 <li><span class="docData">Green data</span> is part of the map or mod that you're editing. This is data a user has changed or created.</li>
                 <li><span class="docParentData">Light Green data</span> is part of the map or mod that you're editing. It's a child of other data and hasn't been edited directly.</li>
             </ul>
+            <p>While you can cover most of the data when duplicating from a Unit, it often leaves out pieces of data due to imperfections of the object explorer. As a result, we'll be duplicating a unit, its weapon, and its ability separetly.</p>
             <div id="unit-data" class="disabledElement">
                 <h2>Unit Data <a class="returnLink" href="#">^</a></h2>
                 <ul class="duplicateList">
@@ -333,6 +335,7 @@
                     <p>The launch sound is located in the <em>attack actor</em>'s <code>Launch Assets</code> field. The launch sound usually follows the format of the unit's name, followed by <code>_AttackLaunch</code>. In our case, <code>Marine_AttackLaunch</code>.</p>
                     <p>In some cases, such as with the Marine, there is can be an additional launch sound that comes from a container such as the Bunker located in the <em>attack actor</em>'s <code>Container Assets</code>. The Marine uses <code>Marine_BunkerAttackLaunch</code> for this.</p>
                 </div>
+                <p>After duplicating everything, you can return to the unit and replace the weapon with the newly duplicated weapon in the unit's `Weapon` field.</p>
             </div>
             <div id="ability-data" class="disabledElement">
                 <h2>Ability Data <a class="returnLink" href="#">^</a></h2>
@@ -450,6 +453,20 @@
                     <p>In most cases you'll probably just want to change the sounds located in your ability's sound actor's fields to specify different sounds, but duplicating sounds is useful if you're importing new sound files or using sounds that don't have associated sound data in your dependencies.</p>
                     <p>Stimpack's sound data uses a name that is similar to our ability data: <code>Marine_Stimpack</code>.</p>
                 </div>
+                <p>After duplicating everything, you can return to the unit and replace the ability with the newly duplicated ability in the unit's `Ability` field.</p>
+            </div>
+            <div id="pitfalls">
+                <h2>Common Pitfalls <a class="returnLink" href="#">^</a></h2>
+                <p>There are a number of common issues with duplicating that you might come across. I hope to shine a light on some of them.</p>
+                <h3>Burrowing Units</h3>
+                <p>There are a few issues with duplicating burrowing units, particularly if you try to duplicate both the unburrowed and burrowed variants at the same time.</p>
+                <ul>
+                    <li><p>You might notice that the burrowed variant of the unit uses the name key of the unit you duplicated. If you want it to have a different name than the original unit, you should change the <code>Text Key</code> in its <code>Name</code> field, probably to the same one that your unburrowed unit uses. Changing the burrowed unit's name before fixing the key can cause the source units to be renamed as well.</p></li>
+                    <li><p>Duplicating a burrowing unit will only offer the option to duplicate ability of the unit you select to duplicate. You'll need to create, edit, and link the opposite unit's abilities manually. Alternatively, you can choose to duplicate each unit separately and link the morph abilities to each other. Keep in mind that most burrowing units use a single actor.</p></li>
+                    <li><p>Actors often fail to link their burrowed variant's units and abilities properly.</p></li>
+                </ul>
+                <h3>Actors</h3>
+                <p>Actors' are prone to failing to link correctly. After duplicating a unit, it's recommended that you scan an Actor's <code>Events</code> and fix any items that did not properly link to your unit or its abilities or weapons.</p>
             </div>
         </main>
         <script src="scripts/interact.js"></script>
