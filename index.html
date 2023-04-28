@@ -17,9 +17,15 @@
             <div class="rightShifted">
                 <h2>What should I duplicate?</h2>
                 <p>When duplicating a unit, if your goal is to create a variant of an existing unit, the duplication target should be obvious. If your intention is to create something unique, I would still recommend duplicating a unit that mechanically resembles the unit you have in mind. There are a lot of different fields that can be glossed over, so you'll want to work with a good baseline. In this tutorial, we'll cover duplicating a <a href="#unit-data">Marine</a>, its <a href="#weapon-data">weapon</a>, and its <a href="#ability-data">Stimpack ability</a>.</p>
+                <p>After choosing your unit, you should determine which aspects of the unit you want to make a duplicate of.</p>
+                <ul>
+                    <li>Changing the unit's statistics such as its life and movement speed is done through the <a href="#unit-data">unit</a>.</li>
+                    <li>Changing the damage the unit does is handled by the unit's <a href="#weapon-data">weapon</a>.</li>
+                    <li>Changing the Stimpack would require you to duplicate the unit's <a href="#ability-data">ability</a>.</li>
+                </ul>
+                <p>In most cases, you'll want to make a duplicate of the <a href="#unit-data">unit</a> itself. Even if your intention is to make a copy of their abilities or weapons, the unit will still need to be modified to use them. Alternatively you <em>can</em> change the source unit's data to use the duplicated data.</p>
             </div>
-            <h1 id="title">How to Duplicate a Unit</h1>
-            <p>Before you start duplicating, you need to determine what aspects of the unit you want to make modifications to. The more things you choose, the more control you'll have, but the more space used by your map. It's best to avoid duplicating anything that you don't need to.</p>
+            <h1 id="title">How to Duplicate</h1>
             <p><strong>Select the data that you want to duplicate:</strong></p>
             <ul id="options" class="cleanList">
                 <li><input type="checkbox" id="unitDataCB" affectedBoxes="unitDataDupe" checked> <a href="#unit-data">Unit Data</a>
@@ -45,7 +51,9 @@
                 <li><a href="#afterword">Afterword</a></li>
                 <li><a href="#pitfalls">Common Pitfalls</a></li>
             </ul>
-            <p>Data that is desirable for duplication will be checked on the object explorers shown on this page depending on what you've selected.</p>
+            <div class="rightShifted smallText">
+                <p>Data that is desirable for duplication will be checked on the object explorers shown on this page depending on what you've selected.</p>
+            </div>
             <p class="footnote">*There is a difference between a model file and model data, as well as a sound file and sound data. In this tutorial I'm only referring to model data and sound data. Most model files and sound files already have model data and sound data that you can reference in actor fields, so I personally <strong>do not</strong> recommend duplicating them unless you need to.</p>
             <p>Data is color-coded depending on where it originates.</p>
             <ul>
@@ -460,9 +468,9 @@
                 <h2>Afterword <a class="returnLink" href="#">^</a></h2>
                 <p>When you've finished duplicating all of your data, what should you do?</p>
                 <ul>
-                    <li><p>It's beneficial to change all of the duplicated data's IDs to fit your new data. <code>Marine2</code> is not a very descriptive ID and it only becomes worse if you try to make more duplicates of the same unit. You can try to follow the existing formats used by your duplicated data or choose a way to organize them that's best for you.</p></li>
-                    <li><p>Give your data different names or editor prefixes/suffixes to distinguish them from the source material, otherwise it can be more difficult to find the appropriate data.</p></li>
-                    <li><p>Ensure all of your data is linked properly.</p></li> <!-- TODO: Data linking tutorial? -->
+                    <li>It's beneficial to change all of the duplicated data's IDs to fit your new data. <code>Marine2</code> is not a very descriptive ID and it only becomes worse if you try to make more duplicates of the same unit. You can try to follow the existing formats used by your duplicated data or choose a way to organize them that's best for you.</li>
+                    <li>Give your data different names or editor prefixes/suffixes to distinguish them from the source material, otherwise it can be more difficult to find the appropriate data.</li>
+                    <li>Ensure all of your data is linked properly.</li> <!-- TODO: Data linking tutorial? -->
                 </ul>
             </div>
             <div id="pitfalls">
@@ -471,9 +479,9 @@
                 <h3>Burrowing Units</h3>
                 <p>There are a few issues with duplicating burrowing units, particularly if you try to duplicate both the unburrowed and burrowed variants at the same time.</p>
                 <ul>
-                    <li><p>You might notice that the burrowed variant of the unit uses the name key of the unit you duplicated. If you want it to have a different name than the original unit, you should change the <code>Text Key</code> in its <code>Name</code> field, probably to the same one that your unburrowed unit uses. Changing the burrowed unit's name before fixing the key can cause the source units to be renamed as well.</p></li>
-                    <li><p>Duplicating a burrowing unit will only offer the option to duplicate ability of the unit you select to duplicate. You'll need to create, edit, and link the opposite unit's abilities manually. Alternatively, you can choose to duplicate each unit separately and link the morph abilities to each other. Keep in mind that most burrowing units use a single actor.</p></li>
-                    <li><p>Actors often fail to link their burrowed variant's units and abilities properly.</p></li>
+                    <li>You might notice that the burrowed variant of the unit uses the name key of the unit you duplicated. If you want it to have a different name than the original unit, you should change the <code>Text Key</code> in its <code>Name</code> field, probably to the same one that your unburrowed unit uses. Changing the burrowed unit's name before fixing the key can cause the source units to be renamed as well.</li>
+                    <li>Duplicating a burrowing unit will only offer the option to duplicate ability of the unit you select to duplicate. You'll need to create, edit, and link the opposite unit's abilities manually. Alternatively, you can choose to duplicate each unit separately and link the morph abilities to each other. Keep in mind that most burrowing units use a single actor.</li>
+                    <li>Actors often fail to link their burrowed variant's units and abilities properly.</li>
                 </ul>
                 <h3>Actors</h3>
                 <p>Actors are prone to failing to link correctly. After duplicating a unit, it's recommended that you scan the <em>unit actor</em>'s <code>Events</code> and fix any items that did not properly link to your unit or its abilities or weapons.</p>

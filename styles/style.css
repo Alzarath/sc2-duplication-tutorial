@@ -121,6 +121,10 @@ code pre {
     margin-left: 20px;
 }
 
+.smallText {
+    font-size: 0.75em;
+}
+
 .footnote {
     color: darkred;
 }
