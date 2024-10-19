@@ -199,12 +199,12 @@
                 <div id="unit-models" class="disabledElement">
                     <h3>Unit Models <a class="returnLink" href="#">^</a></h3>
                     <p>In most cases you should change the <em>unit actor</em>'s fields to specify different models, but duplicating models is useful if you're importing new model files or using models that don't have associated model data in your dependencies.</p>
-                    <p>While all of a marine's models are shown here, it's still best practice to duplicate as few items as possible. If you don't have a replacement model for any of the following or one already exists in the model data, you likely do not need to duplicate it.</p>
+                    <p>While all of a marine's models are shown here, it's still best practice to duplicate as few items as possible. If you don't have a replacement model for any of the following, or if one already exists in the model data, you likely do not need to duplicate it.</p>
                     <div class="rightShifted">
                         <h4 id="unit-model">Unit Model</h4>
                         <p>The unit's model is declared in the <em>unit actor</em>'s <code>Art: Model</code> field and usually shares the same name as the unit itself. In this case, <code>Marine</code>.</p>
                         <h4 id="portrait">Portrait</h4>
-                        <p>The unit's portrait is declared in the <em>unit actor</em>'s <code>Art: Model (Portrait)</code> field. Most portraits will either have the unit named prefixed with <code>Portrait -</code> or suffixed with <code> Portrait</code>. In our case, <code>Portrait - Marine</code>.</p>
+                        <p>The unit's portrait is declared in the <em>unit actor</em>'s <code>Art: Model (Portrait)</code> field. Most portraits will either have the unit name prefixed with <code>Portrait -</code> or suffixed with <code> Portrait</code>. In our case, <code>Portrait - Marine</code>.</p>
                         <h4 id="death-models">Death Models</h4>
                         <p>Units have a number of death models that are located within the <em>unit actor</em>'s <code>Death Effects</code>. These are usually identified by the Unit's name suffixed by <code> Death</code> and sometimes further suffixed more specific variants such as <code> Fire</code> and <code> Acid</code>. Here's a list of what we'd be interested in if we want to change all of them for our Marine:</p><ul>
                         <li><code>Marine Death</code></li>
@@ -221,7 +221,7 @@
                 <div id="unit-sounds" class="disabledElement">
                     <h3>Unit Sounds <a class="returnLink" href="#">^</a></h3>
                     <p>In most cases you should change the <em>unit actor</em>'s fields to specify different sounds, but duplicating sounds is useful if you're importing new sound files or using sounds that don't have associated sound data in your dependencies.</p>
-                    <p>While all of a marine's sounds are shown here, it's still best practice to duplicate as few items as possible. If you don't have a replacement sound for any of the following or one already exists in the sound data, you likely do not need to duplicate it.</p>
+                    <p>While all of a marine's sounds are shown here, it's still best practice to duplicate as few items as possible. If you don't have a replacement sound for any of the following, or if one already exists in the sound data, you likely do not need to duplicate it.</p>
                     <div class="rightShifted">
                         <h4 id="voice-lines">Voice Lines</h4>
                         <p>Voice lines are declared in the <em>unit actor</em>'s <code>Sound: Sounds</code> field. Voice Lines typically have the unit's name suffixed by the particular voice line index it's reprensenting such as <code>_What</code> and <code>_Ready</code>. Here's a list of the Marine's voice lines:</p>
@@ -309,7 +309,7 @@
                 <p>Most weapons can also be duplicated from the unit's data, although there are some instances of complex or unusual weapons that use effect trees that the object explorer will not properly track.</p> <!-- TODO: Effect Tree Navigation tutorial? -->
                 <p>Weapons are often simple instant or projectile-based effect trees. The first thing you'll want to duplicate is the weapon data itself, which has the name of the weapon, usually as shown in-game and typically is located toward the bottom of the object tree. Sometimes the weapon will also be suffixed by our unit name and a hyphen. In our case, we want to add <code>Marine - C-14 Gauss Rifle</code>.</p>
                 <p>You will probably want to duplicate all of a weapon's effects. The names here can vary but usually follow one of two formulas:</p>
-                <p>The unit named, followed by a hyphen, followed by the weapon name, followed by a descriptor of the effect, sometimes in parentheses. This is what our Marine uses. Seeing how we have a very simple effect chain with Marine, there is only one effect, <code>Marine - C-14 Gauss Rifle (Damage)</code>.</p>
+                <p>The unit name, followed by a hyphen, followed by the weapon name, followed by a descriptor of the effect, sometimes in parentheses. This is what our Marine uses. Seeing how we have a very simple effect chain with Marine, there is only one effect, <code>Marine - C-14 Gauss Rifle (Damage)</code>.</p>
                 <p>Another formula uses the name of the unit followed by an effect descriptor. Here's an example of the Hellbat's weapon effect tree for reference:</p>
                 <details class="rightShifted">
                     <summary>Hellbat Example</summary>
@@ -485,6 +485,17 @@
                 </ul>
                 <h3>Actors</h3>
                 <p>Actors are prone to failing to link correctly. After duplicating a unit, it's recommended that you scan the <em>unit actor</em>'s <code>Events</code> and fix any items that did not properly link to your unit or its abilities or weapons.</p>
+                <h3>Object Explorer</h3>
+                <p>As mentioned previously, the Object Explorer is imperfect at displaying the full scope of objects that you might want to duplicate.</p>
+                <p>This can be an intentional limit to avoid introducing <i>too</i> much context and overwhelming the user. It can also be the result of an oversight from Blizzard. Any objects that fail to link will naturally not have their children effects linked, either.</p>
+                <p>Below is a non-comprehensive list of examples where the Object Explorer fails to link to relevant objects.</p>
+                <ul>
+                    <li>Effect locations, such as those defined in an effect's Impact Location, Impact Unit, Launch Location, Launch Unit, Location Offsets, and Transfer Unit.</li>
+                    <li><strong>Modify Unit</strong> effects will not list an <code>Aim Complete Effect</code> defined in the <code>Modify Turret</code> field.</li>
+                    <li><strong>Remove Behavior</strong> effects will not list a behavior defined in the <code>Behavior</code> field.</li>
+                    <li><strong>Accumulators</strong> generally do not get linked to and their fields do not generate links.</li>
+                    <li><strong>Actor</strong> <code>Events</code> frequently fail to generate links. For example, <code>ValidateCreationEffect</code>, <code>ValidatePlayer</code>, <code>ValidatePosition</code>, and <code>ValidateUnitType</code> do not link to the given validator.</li>
+                </ul>
             </div>
         </main>
         <script src="scripts/interact.js"></script>
